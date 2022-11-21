@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+<div class="container my-3">
+    <table class="table">
+        <thead>
+        <tr class="table-dark">
+            <th>작성일시</th>
+            <th>제목</th>
+            <th>작성자</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if boardlist %}
+        {% for item in boardlist %}
+        <tr>
+            <td>{{item.write_time}}</td>
+            <td><a href="{% url 'board:view' board_id=item.id %}">{{item.board_title}}</a></td>
+            <td>{{item.write_user}}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="3">게시글이 없습니다.</td>
+        </tr>
+        {% endif %}
+        </tbody>
+    </table>
+    <a href="{% url 'board:add' %}" class="btn btn-primary">글쓰기</a>
+</div>
