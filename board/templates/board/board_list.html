@@ -1,5 +1,5 @@
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+{% extends 'base.html' %}
+{% block content %}
 <div class="container my-3">
     <table class="table">
         <thead>
@@ -27,3 +27,4 @@
     </table>
     <a href="{% url 'board:add' %}" class="btn btn-primary">글쓰기</a>
 </div>
+{% endblock %}

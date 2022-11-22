@@ -22,6 +22,7 @@ def home_view(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view),
+    path('', home_view, name='home'),
     path('board/', include('board.urls')),
+    path('user/', include('users_app.urls')),
 ]
