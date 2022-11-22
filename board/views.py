@@ -18,7 +18,10 @@ def board_add(request):
     if request.method == 'POST':
         boardform = BoardAdd(request.POST)
         if boardform.is_valid():
-            boardform.save()
+            print(boardform.cleaned_data)#디버그용
+            post = boardform.save(commit=False)
+            post.write_user = request.user
+            post.save()
             return redirect(reverse('board:list'))
     else:
         boardform = BoardAdd()
