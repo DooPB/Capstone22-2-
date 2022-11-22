@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chartpage</title>
+
+    <link rel="stylesheet" href="fontawesome\css\all.css" >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<head>
+    <style>
+        h1 {
+            margin-top: 500px;
+            display: block;
+            margin: 0 auto;
+            font-family: 'Jura';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 283px;
+            text-align: center;
+            color: #000000;
+            height: 100px;
+
+        }
+
+        #chartbox {
+            width: 407px;
+            height: 269px;
+            background-color: #aeabab;
+            border: 0px solid rgb(0, 0, 0);
+            border-radius: 3%;
+        }
+
+        .row {
+
+            text-align: center;
+            /* display: block; */
+            font-size: 16px;
+            border-bottom: 1px solid #eee;
+            padding: 11px 0;
+
+        }
+
+        #trading_volum {
+            width: 100%;
+            height: 92%;
+            background-color: #aeabab;
+            border: 0px solid rgb(0, 0, 0);
+            border-radius: 3%;
+        }
+
+        li,
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        #chart_box {
+
+            height: 400px;
+        }
+
+        #notice_board {
+            width: 100%;
+            height: 258px;
+            background-color: #aeabab;
+            border: 0px solid rgb(0, 0, 0);
+            border-radius: 3%;
+        }
+
+        #left_layout {
+            width: 60%;
+        }
+
+        #right_layout {
+            width: 40%;
+        }
+
+        #navbar {
+            width: 100%;
+            height: 100;
+            margin-bottom: 100px;
+        }
+        #left_box{
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 메인 박스 -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col" id="navbar">navbar</div>
+            <!-- 네브 빠 -->
+        </div>
+        <div class="row">
+            <div class="col-8" id="left_layout">
+
+                <div class="row" id="left_box">
+
+                    <div class="col" id="chart_box">
+                        
+                        <!-- 주식차트 넣을곳 -->
+                    </div>
+                    <div class="col" id="notice_board">
+                        <!-- 게시판 넣을곳 -->
+                        <p>실시간 반응</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4" id="right_layout">
+                <!-- 실시간 거래량 많은 차트 -->
+                <p> 실시간 하락 종목</p>
+                <table id="trading_volum">
+                    <tbody>
+                        <tr>
+                            <td>종목명</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+                        <tr>
+                            <td>종목명2</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+                        <tr>
+                            <td>종목명3</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+                        <tr>
+                            <td>종목명4</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+                        <tr>
+                            <td>종목명5</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+                        <tr>
+                            <td>종목명5</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+                        <tr>
+                            <td>종목명5</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+                        <tr>
+                            <td>종목명5</td>
+                            <td>현재가</td>
+                            <td>전일대비</td>
+                            <td>동락률</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
