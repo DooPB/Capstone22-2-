@@ -20,10 +20,14 @@ from django.shortcuts import render
 def home_view(request):
     return render(request, 'home.html')
 
+def chart_view(request):
+    return  render(request, 'chartpage.html')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
     path('board/', include('board.urls')),
     path('user/', include('users_app.urls')),
     path('info/', include('coininfo.urls')),
+    path('chartpage/', chart_view)
 ]

@@ -47,3 +47,12 @@ def XRP_refresh(request):
     XRP_data = CoinInfoXRP.objects.all()
     return render(request,'home.html',context={'XRP_data':XRP_data})
 
+def ETH_view(request):
+    return render(request,'chartpage.html')
+
+def BTC_view(request):
+    return render(request,'chartpage.html')
+
+def XRP_view(request):
+    return render(request,'chartpage.html')
+

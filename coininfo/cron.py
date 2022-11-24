@@ -94,5 +94,5 @@ def job():
 
 def main():
     sched = BackgroundScheduler()
-    sched.add_job(job,'interval', seconds=3, id='test')
+    sched.add_job(job,'interval', seconds=6000, id='test')
     sched.start()
