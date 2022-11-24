@@ -25,4 +25,5 @@ urlpatterns = [
     path('', home_view, name='home'),
     path('board/', include('board.urls')),
     path('user/', include('users_app.urls')),
+    path('info/', include('coininfo.urls')),
 ]

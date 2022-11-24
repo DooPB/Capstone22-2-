@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'coininfo.apps.CoininfoConfig',
     'users_app.apps.UsersAppConfig',
     'board.apps.BoardConfig',
     'django.contrib.admin',
